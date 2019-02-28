@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
       users.increments("id");
       users.string("username");
       users.string("password");
+      users.string("department");
       users.boolean("active");
     })
     .then(() => console.log("Created Users Table"));
